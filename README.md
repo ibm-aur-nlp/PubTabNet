@@ -28,9 +28,25 @@ curl -o <YOUR_TARGET_DIR>/PubTabNet.tar.gz https://dax-assets-dev.s3.us-south.cl
 wget -O <YOUR_TARGET_DIR>/PubTabNet.tar.gz https://dax-assets-dev.s3.us-south.cloud-object-storage.appdomain.cloud/dax-pubtabnet/1.0.0/PubTabNet.tar.gz
 ```
 
-## Annotation format
+## Annotation structure
 
-The annotation files follows the [json format of the Object Detection task of MS COCO](http://cocodataset.org/#format-data)
+The structure of the annotation json file is:
+
+```
+{'dataset': str,
+ 'images': [
+   'filename': str,
+   'split': str,
+   'imgid': int,
+   'html': {
+     'structure': {'tokens': [str]},
+     'cell': [
+       {'tokens': [str]}
+     ]
+   }
+ ]
+}
+```
 
 ## Examples
 
