@@ -14,18 +14,14 @@ The ground truth of test will not be release, as we want to keep it for a compet
 
 ## Getting data
 
-Images and annotations can be downloaded [here](https://developer.ibm.com/exchanges/data/all/pubtabnet/). If you want to download the data from the command line, you can use aws s3 API, curl or wget to download the data.
+Images and annotations can be downloaded [here](https://developer.ibm.com/exchanges/data/all/pubtabnet/). If you want to download the data from the command line, you can use curl or wget to download the data.
 
 ```
-aws --endpoint-url=https://dax-assets-dev.s3.us-south.cloud-object-storage.appdomain.cloud/dax-pubtabnet/1.0.0/PubTabNet.tar.gz <YOUR_TARGET_DIR>/PubTabNet.tar.gz
-```
-
-```
-curl -o <YOUR_TARGET_DIR>/PubTabNet.tar.gz https://dax-assets-dev.s3.us-south.cloud-object-storage.appdomain.cloud/dax-pubtabnet/1.0.0/PubTabNet.tar.gz
+curl -o <YOUR_TARGET_DIR>/PubTabNet.tar.gz https://dax.cdn.appdomain.cloud/dax-pubtabnet/1.0.0/PubTabNet.tar.gz
 ```
 
 ```
-wget -O <YOUR_TARGET_DIR>/PubTabNet.tar.gz https://dax-assets-dev.s3.us-south.cloud-object-storage.appdomain.cloud/dax-pubtabnet/1.0.0/PubTabNet.tar.gz
+wget -O <YOUR_TARGET_DIR>/PubTabNet.tar.gz https://dax.cdn.appdomain.cloud/dax-pubtabnet/1.0.0/PubTabNet.tar.gz
 ```
 
 ## Annotation structure
