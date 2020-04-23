@@ -17,11 +17,11 @@ The ground truth of test will not be release, as we want to keep it for a compet
 Images and annotations can be downloaded [here](https://developer.ibm.com/exchanges/data/all/pubtabnet/). If you want to download the data from the command line, you can use curl or wget to download the data.
 
 ```
-curl -o <YOUR_TARGET_DIR>/PubTabNet.tar.gz https://dax-cdn.cdn.appdomain.cloud/dax-pubtabnet/1.0.0/PubTabNet.tar.gz
+curl -o <YOUR_TARGET_DIR>/PubTabNet.tar.gz https://dax-cdn.cdn.appdomain.cloud/dax-pubtabnet/1.0.1/PubTabNet.tar.gz
 ```
 
 ```
-wget -O <YOUR_TARGET_DIR>/PubTabNet.tar.gz https://dax-cdn.cdn.appdomain.cloud/dax-pubtabnet/1.0.0/PubTabNet.tar.gz
+wget -O <YOUR_TARGET_DIR>/PubTabNet.tar.gz https://dax-cdn.cdn.appdomain.cloud/dax-pubtabnet/1.0.1/PubTabNet.tar.gz
 ```
 
 ## Annotation structure
