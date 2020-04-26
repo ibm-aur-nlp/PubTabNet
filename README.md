@@ -44,6 +44,17 @@ The structure of the annotation json file is:
 }
 ```
 
+## Cite us
+
+```
+@article{zhong2019image,
+  title={Image-based table recognition: data, model, and evaluation},
+  author={Zhong, Xu and ShafieiBavani, Elaheh and Yepes, Antonio Jimeno},
+  journal={arXiv preprint arXiv:1911.10683},
+  year={2019}
+}
+```
+
 ## Examples
 
 A [Jupyter notebook](./explore_PubTabNet_dataset.ipynb) is provided to inspect the annotations of 20 sample tables.
