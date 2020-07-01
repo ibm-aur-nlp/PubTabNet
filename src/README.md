@@ -1,4 +1,4 @@
-# Tree Edit Distance based Similarity
+# Tree-Edit-Distance-based Similarity (TEDS)
 
 Evaluation metric for table recognition. This metric measures both the structure similarity and the cell content similarity between the prediction and the ground truth. The score is normalized between 0 and 1, where 1 means perfect matching.
 
