@@ -61,7 +61,7 @@ The structure of the annotation json file is:
 
 ## Examples
 
-A [Jupyter notebook](./explore_PubTabNet_dataset.ipynb) is provided to inspect the annotations of 20 sample tables.
+A [Jupyter notebook](./exploring_PubTabNet_dataset.ipynb) is provided to inspect the annotations of 20 sample tables.
 
 
 ## Related links
