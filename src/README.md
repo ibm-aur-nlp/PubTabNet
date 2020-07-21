@@ -21,7 +21,7 @@ Please see [this demo](demo.ipynb).
 ```
 @article{zhong2019image,
   title={Image-based table recognition: data, model, and evaluation},
-  author={Zhong, Xu and ShafieiBavani, Elaheh and Yepes, Antonio Jimeno},
+  author={Zhong, Xu and ShafieiBavani, Elaheh and Jimeno Yepes, Antonio},
   journal={arXiv preprint arXiv:1911.10683},
   year={2019}
 }
