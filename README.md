@@ -4,13 +4,15 @@ PubTabNet is a large dataset for image-based table recognition, containing 568k+
 
 ## Headlines
 
+`21/July/2020` - PubTabNet 2.0.0 is released, where the position (bounding box) of non-empty cells is added into the annotation. The annotation file is also changed from `json` format to `jsonl` format to reduce the requirement on large RAM.
+
 `01/July/2020` - Code of **T**ree-**Edit**-**D**istance-based **S**imilarity (TEDS) metric is [released](src).
 
 ## Updates in progress
 
 ### Encoder-dual-decoder model
 
-In our paper, we proposed a new encoder-dual-decoder architecture, which was trained on PubTabNet and can accurately reconstruct the HTML representation of complex tables solely relying on image input. We are working on legal approval for releasing the source code and the pre-trained model on [IBM Model Asset eXchange (MAX)](https://developer.ibm.com/exchanges/models/).  
+In our paper, we proposed a new encoder-dual-decoder architecture, which was trained on PubTabNet and can accurately reconstruct the HTML representation of complex tables solely relying on image input. Due to legal constraints, the source code of the model will not be released.
 
 ### Ground truth of test set
 
@@ -21,30 +23,32 @@ The ground truth of test will not be release, as we want to keep it for a compet
 Images and annotations can be downloaded [here](https://developer.ibm.com/exchanges/data/all/pubtabnet/). If you want to download the data from the command line, you can use curl or wget to download the data.
 
 ```
-curl -o <YOUR_TARGET_DIR>/PubTabNet.tar.gz https://dax-cdn.cdn.appdomain.cloud/dax-pubtabnet/1.0.1/PubTabNet.tar.gz
+curl -o <YOUR_TARGET_DIR>/PubTabNet.tar.gz https://dax-cdn.cdn.appdomain.cloud/dax-pubtabnet/2.0.0/pubtabnet.tar.gz
 ```
 
 ```
-wget -O <YOUR_TARGET_DIR>/PubTabNet.tar.gz https://dax-cdn.cdn.appdomain.cloud/dax-pubtabnet/1.0.1/PubTabNet.tar.gz
+wget -O <YOUR_TARGET_DIR>/PubTabNet.tar.gz https://dax-cdn.cdn.appdomain.cloud/dax-pubtabnet/2.0.0/pubtabnet.tar.gz
 ```
 
 ## Annotation structure
 
-The structure of the annotation json file is:
+The annotation is in the jsonl (jsonlines) format, where each line contains the annotations on a given sample in the following format:
+The structure of the annotation jsonl file is:
 
 ```
-{'dataset': str,
- 'images': [
+{
    'filename': str,
    'split': str,
    'imgid': int,
    'html': {
      'structure': {'tokens': [str]},
      'cell': [
-       {'tokens': [str]}
+       {
+         'tokens': [str],
+         'bbox': [x0, y0, x1, y1]  # only non-empty cells have this attribute
+       }
      ]
    }
- ]
 }
 ```
 
