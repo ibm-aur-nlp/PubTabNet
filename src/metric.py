@@ -12,7 +12,7 @@
 import distance
 from apted import APTED, Config
 from apted.helpers import Tree
-from lxml import html
+from lxml import etree, html
 from collections import deque
 from parallel import parallel_process
 from tqdm import tqdm
@@ -62,10 +62,11 @@ class CustomConfig(Config):
 class TEDS(object):
     ''' Tree Edit Distance basead Similarity
     '''
-    def __init__(self, structure_only=False, n_jobs=1):
+    def __init__(self, structure_only=False, n_jobs=1, ignore_nodes=None):
         assert isinstance(n_jobs, int) and (n_jobs >= 1), 'n_jobs must be an integer greather than 1'
         self.structure_only = structure_only
         self.n_jobs = n_jobs
+        self.ignore_nodes = ignore_nodes
         self.__tokens__ = []
 
     def tokenize(self, node):
@@ -117,6 +118,9 @@ class TEDS(object):
         if pred.xpath('body/table') and true.xpath('body/table'):
             pred = pred.xpath('body/table')[0]
             true = true.xpath('body/table')[0]
+            if self.ignore_nodes:
+                etree.strip_tags(pred, *self.ignore_nodes)
+                etree.strip_tags(true, *self.ignore_nodes)
             n_nodes_pred = len(pred.xpath(".//*"))
             n_nodes_true = len(true.xpath(".//*"))
             n_nodes = max(n_nodes_pred, n_nodes_true)
