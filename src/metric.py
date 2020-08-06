@@ -114,8 +114,8 @@ class TEDS(object):
         if (not pred) or (not true):
             return 0.0
         parser = html.HTMLParser(remove_comments=True, encoding='utf-8')
-        pred = html.fromstring(pred, parser)
-        true = html.fromstring(true, parser)
+        pred = html.fromstring(pred, parser=parser)
+        true = html.fromstring(true, parser=parser)
         if pred.xpath('body/table') and true.xpath('body/table'):
             pred = pred.xpath('body/table')[0]
             true = true.xpath('body/table')[0]
