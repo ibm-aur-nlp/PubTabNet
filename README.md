@@ -6,6 +6,8 @@ PubTabNet is a large dataset for image-based table recognition, containing 568k+
 
 `21/July/2020` - PubTabNet 2.0.0 is released, where the position (bounding box) of non-empty cells is added into the annotation. The annotation file is also changed from `json` format to `jsonl` format to reduce the requirement on large RAM.
 
+`20/Jul/2020` - PubTabNet is used in [ICDAR 2021 Competition on Scientific Literature Parsing](https://github.com/IBM/ICDAR2021-SLP) ([Task B on Table Recognition](https://aieval.draco.res.ibm.com/challenge/40/overview))
+
 `03/July/2020` - `Image-based table recognition: data, model, and evaluation` is accepted by ECCV20.
 
 `01/July/2020` - Code of **T**ree-**Edit**-**D**istance-based **S**imilarity (TEDS) metric is [released](src).
