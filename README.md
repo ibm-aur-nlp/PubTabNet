@@ -4,6 +4,8 @@ PubTabNet is a large dataset for image-based table recognition, containing 568k+
 
 ## Headlines
 
+`07/Mar/2022` - Test set and ground truth for the ICDAR 2021 Scientific Literature Parsing competition available [here](https://github.com/ajjimeno/icdar-task-b).
+
 `04/May/2021` - Report for the ICDAR 2021 Scientific Literature Parsing competition available [here](https://github.com/ibm-aur-nlp/PubLayNet/blob/master/ICDAR_SLR_competition/ICDAR_2021_Scientific_Literature_Parsing.pdf).
 
 `21/July/2020` - PubTabNet 2.0.0 is released, where the position (bounding box) of non-empty cells is added into the annotation. The annotation file is also changed from `json` format to `jsonl` format to reduce the requirement on large RAM.
@@ -35,6 +37,8 @@ curl -o <YOUR_TARGET_DIR>/PubTabNet.tar.gz https://dax-cdn.cdn.appdomain.cloud/d
 ```
 wget -O <YOUR_TARGET_DIR>/PubTabNet.tar.gz https://dax-cdn.cdn.appdomain.cloud/dax-pubtabnet/2.0.0/pubtabnet.tar.gz
 ```
+
+Test set and ground truth for the ICDAR 2021 Scientific Literature Parsing competition available [here](https://github.com/ajjimeno/icdar-task-b).
 
 ## Annotation structure
 
