@@ -1,1 +1,0 @@
-ICDAR_SLR_competition/final_test_set/final_eval.zip filter=lfs diff=lfs merge=lfs -text
