@@ -28,15 +28,7 @@ The ground truth of test will not be release, as we want to keep it for a compet
 
 ## Getting data
 
-Images and annotations can be downloaded [here](https://developer.ibm.com/exchanges/data/all/pubtabnet/). If you want to download the data from the command line, you can use curl or wget to download the data.
-
-```
-curl -o <YOUR_TARGET_DIR>/PubTabNet.tar.gz https://dax-cdn.cdn.appdomain.cloud/dax-pubtabnet/2.0.0/pubtabnet.tar.gz
-```
-
-```
-wget -O <YOUR_TARGET_DIR>/PubTabNet.tar.gz https://dax-cdn.cdn.appdomain.cloud/dax-pubtabnet/2.0.0/pubtabnet.tar.gz
-```
+PubTabNet is available from: [ajimeno/PubTabNet](https://huggingface.co/datasets/ajimeno/PubTabNet)
 
 Test set and ground truth for the ICDAR 2021 Scientific Literature Parsing competition available [here](https://github.com/ajjimeno/icdar-task-b).
 
